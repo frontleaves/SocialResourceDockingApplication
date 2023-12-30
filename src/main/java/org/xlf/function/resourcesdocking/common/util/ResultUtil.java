@@ -81,12 +81,25 @@ public class ResultUtil {
      * <hr/>
      * 用于封装错误响应结果
      *
+     * @param errorCode 错误码
+     * @param data 响应数据
+     * @return BaseResponse
+     */
+    public static @NotNull BaseResponse error(@NotNull ErrorCode errorCode, Object data) {
+        return new BaseResponse(errorCode.getOutput(), errorCode.getCode(), errorCode.getMessage(), data);
+    }
+
+    /**
+     * <h2>Error 错误响应结果</h2>
+     * <hr/>
+     * 用于封装错误响应结果
+     *
      * @param output 输出信息
      * @param code 业务错误码
      * @param message 响应信息
      * @return BaseResponse
      */
-    public static @NotNull BaseResponse error(String output, Integer code, String message) {
-        return new BaseResponse(output, code, message);
+    public static @NotNull BaseResponse error(String output, Integer code, String message, Object data) {
+        return new BaseResponse(output, code, message, data);
     }
 }
