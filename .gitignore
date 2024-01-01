@@ -34,3 +34,4 @@ build/
 
 ### OS ###
 /src/main/resources/application.yml
+*.pdf

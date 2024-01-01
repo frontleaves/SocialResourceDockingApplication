@@ -1,4 +1,4 @@
-# SocialResourceDocking 开发者
+# SocialResourceDocking 功能说明文档
 
 <div align="right">Author 筱锋xiao_lfeng | Version: V1.0.0</div>
 
